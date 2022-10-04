@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="5dp"
+        app:contentPadding="10dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="150dp"
+                android:layout_height="250dp"
+                android:src="@drawable/pangasinan_logo2"
+                android:layout_marginRight="5dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_profile"
+                android:text="ROSS LAWRENCE MORANTE"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#8b0000"
+                />
+
+            <View
+                android:id="@+id/ingredients_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/img_profile"
+                android:layout_below="@id/txt_name"/>
+
+
+            <TextView
+                android:id="@+id/txt_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_profile"
+                android:layout_below="@id/ingredients_view"
+                android:text="Age: 69"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_profile"
+                android:layout_below="@id/txt_age"
+                android:text="Address: Dagupan City, Pangasinan"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_profile"
+                android:layout_below="@id/txt_address"
+                android:text="Email: asdfasd@gmail.com"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/txt_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_profile"
+                android:layout_below="@id/txt_email"
+                android:text="Contact number: 09696969696"
+                android:layout_marginTop="10dp"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
