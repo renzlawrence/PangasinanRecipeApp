@@ -973,8 +973,6 @@ public class CitiesAdapter extends RecyclerView.Adapter<CitiesAdapter.ViewHolder
             ""};*/
 
 
-
-
     public CitiesAdapter(Context context, List<String> citiesList) {
         this.context = context;
         this.citiesList = citiesList;

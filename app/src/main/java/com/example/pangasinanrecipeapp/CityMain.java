@@ -16,7 +16,7 @@ public class CityMain extends AppCompatActivity {
     ImageView img_food;
     String city_name;
     TextView txt_food_title;
-    CardView cardView_ingredients, cardView_product, cardView_nutrition, cardView_process;
+    CardView cardView_ingredients, cardView_product, cardView_nutrition, cardView_process,cardView_profile;
 
     String[] ingredients_title, ingredients_description,process_description;
     int[] ingredients_picture,nutrition_picture,about_product,process_picture;
@@ -31,6 +31,7 @@ public class CityMain extends AppCompatActivity {
         cardView_product = findViewById(R.id.cardView_product);
         cardView_nutrition = findViewById(R.id.cardView_nutrition);
         cardView_process = findViewById(R.id.cardView_process);
+        cardView_profile = findViewById(R.id.cardView_profile);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -191,6 +192,16 @@ public class CityMain extends AppCompatActivity {
                 bundle.putIntArray("process_picture",process_picture);
                 Intent i = new Intent(CityMain.this, ProcessActivity.class);
                 i.putExtras(bundle);
+                CityMain.this.startActivity(i);
+
+            }
+        });
+
+        cardView_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent i = new Intent(CityMain.this, PersonMain.class);
                 CityMain.this.startActivity(i);
 
             }
