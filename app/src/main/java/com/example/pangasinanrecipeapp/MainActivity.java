@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -20,12 +23,14 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     CitiesAdapter citiesAdapter;
     LinearLayoutManager manager;
+    ImageButton img_profile;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        img_profile = findViewById(R.id.img_profile);
 
         manager = new LinearLayoutManager(this);
 
@@ -35,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         loadCities();
+        img_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, PersonMain.class);
+                MainActivity.this.startActivity(i);
+            }
+        });
     }
 
     public void loadCities() {
