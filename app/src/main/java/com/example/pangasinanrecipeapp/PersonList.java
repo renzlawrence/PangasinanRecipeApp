@@ -37,17 +37,17 @@ public class PersonList extends AppCompatActivity {
 
     public void showPersons(){
 
-        PersonObject p1 =new PersonObject(R.drawable.ic_baseline_person_account_24,"Michael Kearney C. Lameg","Age: 23","Libsong East Lingayen Pangasinan","michaelameg08@gmail.com","09469938801");
+        PersonObject p1 =new PersonObject(R.drawable.profile_1,"Michael Kearney C. Lameg","Age: 20","Libsong East, Lingayen Pangasinan","michaelameg08@gmail.com","09469938801");
         personObjectList.add(p1);
-        PersonObject p2 =new PersonObject(R.drawable.ic_baseline_person_account_24,"Franz Gian Lee T. Estrada","19","2","2","2");
+        PersonObject p2 =new PersonObject(R.drawable.profile_2,"Franz Gian Lee T. Estrada","Age: 19","Bliss Libsong East, Lingayen Pangasinan","supra6194@gmail.com","09770990531");
         personObjectList.add(p2);
-        PersonObject p3 =new PersonObject(R.drawable.ic_baseline_person_account_24,"Gester Luis M. Luchavez","19","3","3","3");
+        PersonObject p3 =new PersonObject(R.drawable.profile_3,"Gester Luis M. Luchavez","Age: 19","Libsong east, Lingayen Pangasinan","gesterluisluchavez@gmail.com","09754844256");
         personObjectList.add(p3);
-        PersonObject p4 =new PersonObject(R.drawable.ic_baseline_person_account_24,"Denz Bernardo Tumbaga","19","4","4","4");
+        PersonObject p4 =new PersonObject(R.drawable.profile_4,"Denz Bernardo Tumbaga","Age: 19","Inoman Pozorrubip Pangasinan","tumbagadenz@gmail.com","09951164670");
         personObjectList.add(p4);
-        PersonObject p5 =new PersonObject(R.drawable.ic_baseline_person_account_24,"Charles Andrei J. Bautista","19","5","5","5");
+        PersonObject p5 =new PersonObject(R.drawable.profile_5,"Charles Andrei J. Bautista","Age: 19","Nama Pozorrubio Pangasinan","charlesandreibautista482@gmail.com","09455511834");
         personObjectList.add(p5);
-        PersonObject p6 =new PersonObject(R.drawable.ic_baseline_person_account_24,"Nathaniel Erik T. De Guzman","19","6","6","6");
+        PersonObject p6 =new PersonObject(R.drawable.profile_6,"Nathaniel Erik T. De Guzman","Age: 19","Rosario, Pozorubbio Pangasinan","nathanielerik19@gmail.com","09475587132");
         personObjectList.add(p6);
 
         personAdapter = new PersonAdapter(personObjectList, PersonList.this);
